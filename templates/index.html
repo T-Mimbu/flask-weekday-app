@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Weekday Finder</title>
+</head>
+<body>
+    <h1>Enter your birthdate</h1>
+    <form method="post">
+        <input type="date" name="birthdate" required>
+        <button type="submit">Find Weekday</button>
+    </form>
+    {% if weekday %}
+        <h2>The day of the week is: {{ weekday }}</h2>
+    {% endif %}
+</body>
+</html>
